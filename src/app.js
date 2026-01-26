@@ -21,6 +21,7 @@ app.use(express.static("public")) // if we want to store pdf, image which came f
 // cookie-parser: basically used for user url cookies access and store, we can perform curd operations on it
 app.use(cookieParser())
 
-
+// middleware: suppose you hit the url(instagram) you send the request then instagram sent you response(res.json(), res.send()) but you want to check that user is logged in or not, you are admin or not for that you need to used middleware
+// next is flag 
 
 export {app}
